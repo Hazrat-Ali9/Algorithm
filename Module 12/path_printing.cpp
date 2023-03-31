@@ -24,7 +24,7 @@ void bfs(int src) {
 
         for(int adj_node: adj_list[head]) {
             if(visited[adj_node] == 0) {
-
+                
                 parent[adj_node] = head;
                 visited[adj_node] = 1;
                 level[adj_node] = level[head] + 1;
